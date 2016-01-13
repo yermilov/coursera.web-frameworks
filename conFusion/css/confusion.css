@@ -49,6 +49,21 @@ body {
      background : #303F9F;
 }
 
+.carousel {
+    background:#1A237E;
+}
+
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
 .navbar-inverse .navbar-nav > .active > a,
  .navbar-inverse .navbar-nav > .active > a:hover,
  .navbar-inverse .navbar-nav > .active > a:focus {
@@ -71,8 +86,4 @@ body {
 
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
     color : #000000;
-}
-
-.navbar-form > .form-group > .checkbox > label {
-    color      : #fff;
 }
