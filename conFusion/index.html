@@ -246,6 +246,15 @@
                             <span class="sr-only">Next</span>
                         </a>
 
+                        <div class="btn-group" id="carouselButtons">
+                            <button class="btn btn-danger btn-xs" id="carousel-pause">
+                                <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                            </button>
+                            <button class="btn btn-danger btn-xs" id="carousel-play">
+                                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                            </button>
+                        </div>
+
                     </div>
 
                 </div>
@@ -297,6 +306,20 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function() {
+                $("#mycarousel").carousel( { interval: 2000 } );
+
+                $("#carousel-pause").click(function() {
+                    $("#mycarousel").carousel('pause');
+                });
+                
+                $("#carousel-play").click(function(){
+                    $("#mycarousel").carousel('cycle');
+                });
+            });
+        </script>
 
     </body>
 
